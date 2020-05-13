@@ -4,8 +4,8 @@ class Post
 
     @@all = []
 
-    def initialize(title)
-        @title = title 
+    def initialize(title)      #Wouldn't be cleaner to initialize with title as well as author instance     
+        @title = title         #and move that logic away from the author class? 
         @@all << self 
     end 
 
